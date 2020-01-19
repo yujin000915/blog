@@ -1,0 +1,140 @@
+body {
+	background-color: #f7f7f7;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.max-container {
+	margin: 0 auto;
+	width: 1080px;
+	padding: 0 15px;
+}
+
+#wrap {
+	#header {
+		.max-container {
+			display: flex;
+			flex: 0 0 auto;
+			height: 150px;
+			padding-top: 30px;
+			justify-content: space-between;
+			align-items: center;
+
+			.page-name {
+				font-size: 27px;
+			}
+
+			.gnb {
+				font-size: 13px;
+
+				ul {
+					display: flex;
+					flex: 0 0 auto;
+					list-style: none;
+
+					li {
+						padding: 0 20px;
+					}
+				}
+			}
+		}
+	}
+
+	#main {
+		padding-bottom: 60px;
+
+		.max-container {
+			.title {
+				width: 100%;
+				height: 150px;
+				padding: 0 15px;
+
+				&-caption {
+					text-align: center;
+					font-size: 36px;
+				}
+			}
+
+			.content {
+				display: flex;
+				justify-content: space-between;
+
+				&-inner {
+					flex: 1 1 auto;
+					padding-right: 30px;
+
+					.section {
+						.article {
+							&-banner {
+								max-width: 780px;
+								height: 350px;
+								background-position: center;
+								background-repeat: no-repeat;
+								background-size: cover;
+							}
+
+							&-sentence {
+								padding: 40px 30px;
+
+								&-title {
+									color: #222;
+									font-size: 18px;
+									font-weight: 400;
+
+									a:link { color: #000; }
+									a:visited { color: #000; }
+									a:hover { color: #b20a0a; }
+									a:active { color: #000; }
+								}
+
+								&-subtitle {
+									display: flex;
+									flex: 0 0 auto;
+									padding: 20px 0 30px 0;
+									font-size: 13px;
+									color: #a8a8a8;
+
+									&-inner {
+										margin-right: 15px;	
+									}
+								}
+
+								&-inform {
+									color: #606060;
+									font-size: 13px;
+								}
+
+								.button {
+									margin-top:30px;
+									color: #222;
+									font-size: 12px;
+								}
+							}
+						}
+					}
+				}
+
+				&-nav {
+					display: flex;
+					flex: 0 0 auto;
+					width: 270px;
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+		}
+	}
+
+	#footer {
+		width: 100%;
+		height: 360px;
+		background-color: #fff;
+
+		.max-container {
+			.footer-section {
+				display: flex;
+				flex: 0 0 auto;
+			}
+
+		}
+	}
+}
